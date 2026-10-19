@@ -16,17 +16,17 @@ import com.apenkoder.niasfood.ui.setup.SetupScreen
 
 @Composable
 fun AppRoot() {
-    val vm = containerViewModel<AppViewModel>("app") { c, _ -> AppViewModel(c) }
-    val boot by vm.boot.collectAsStateWithLifecycle()
-    val session by vm.session.collectAsStateWithLifecycle()
-    val current = session
+  val vm = containerViewModel<AppViewModel>("app") { c, _ -> AppViewModel(c) }
+  val boot by vm.boot.collectAsStateWithLifecycle()
+  val session by vm.session.collectAsStateWithLifecycle()
+  val current = session
 
-    Surface(modifier = Modifier.fillMaxSize(), color = MaterialTheme.colorScheme.background) {
-        when {
-            boot == Boot.LOADING -> LoadingState(stringResource(R.string.preparing))
-            boot == Boot.NEEDS_SETUP -> SetupScreen(onDone = vm::setupDone)
-            current == null -> LoginScreen()
-            else -> MainShell(session = current, onLock = vm::lock)
-        }
+  Surface(modifier = Modifier.fillMaxSize(), color = MaterialTheme.colorScheme.background) {
+    when {
+      boot == Boot.LOADING -> LoadingState(stringResource(R.string.preparing))
+      boot == Boot.NEEDS_SETUP -> SetupScreen(onDone = vm::setupDone)
+      current == null -> LoginScreen()
+      else -> MainShell(session = current, onLock = vm::lock)
     }
+  }
 }

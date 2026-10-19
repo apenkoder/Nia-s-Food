@@ -12,28 +12,30 @@ import kotlinx.coroutines.launch
 
 enum class Boot { LOADING, NEEDS_SETUP, READY }
 
-class AppViewModel(private val c: AppContainer) : ViewModel() {
-    private val _boot = MutableStateFlow(Boot.LOADING)
-    val boot: StateFlow<Boot> = _boot
-    val session: StateFlow<Session?> = c.session.current
+class AppViewModel(
+  private val c: AppContainer,
+) : ViewModel() {
+  private val _boot = MutableStateFlow(Boot.LOADING)
+  val boot: StateFlow<Boot> = _boot
+  val session: StateFlow<Session?> = c.session.current
 
-    init {
-        viewModelScope.launch {
-            // Debug builds seed demo data on first run. The release DemoSeeder does nothing.
-            DemoSeeder.seedIfNeeded(c)
-            _boot.value = if (c.db.outletDao().count() == 0) Boot.NEEDS_SETUP else Boot.READY
-        }
-        viewModelScope.launch {
-            while (true) {
-                delay(10_000L)
-                c.session.checkIdle()
-            }
-        }
+  init {
+    viewModelScope.launch {
+      // Debug builds seed demo data on first run. The release DemoSeeder does nothing.
+      DemoSeeder.seedIfNeeded(c)
+      _boot.value = if (c.db.outletDao().count() == 0) Boot.NEEDS_SETUP else Boot.READY
     }
-
-    fun setupDone() {
-        _boot.value = Boot.READY
+    viewModelScope.launch {
+      while (true) {
+        delay(10_000L)
+        c.session.checkIdle()
+      }
     }
+  }
 
-    fun lock() = c.session.lock()
+  fun setupDone() {
+    _boot.value = Boot.READY
+  }
+
+  fun lock() = c.session.lock()
 }

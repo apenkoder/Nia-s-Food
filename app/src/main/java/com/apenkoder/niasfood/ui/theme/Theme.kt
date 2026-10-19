@@ -11,7 +11,8 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
 
-private val LightColors = lightColorScheme(
+private val LightColors =
+  lightColorScheme(
     primary = Color(0xFF006B35),
     onPrimary = Color(0xFFFFFFFF),
     primaryContainer = Color(0xFFB7F2C6),
@@ -33,11 +34,12 @@ private val LightColors = lightColorScheme(
     error = Color(0xFFBA1A1A),
     onError = Color(0xFFFFFFFF),
     errorContainer = Color(0xFFFFDAD6),
-    onErrorContainer = Color(0xFF410002)
-)
+    onErrorContainer = Color(0xFF410002),
+  )
 
 // Dark: true black root, #121212 to #1E1E1E surfaces, off-white text, desaturated brand colours.
-private val DarkColors = darkColorScheme(
+private val DarkColors =
+  darkColorScheme(
     primary = Color(0xFF6CDB8D),
     onPrimary = Color(0xFF00391A),
     primaryContainer = Color(0xFF005229),
@@ -59,22 +61,23 @@ private val DarkColors = darkColorScheme(
     error = Color(0xFFFFB4AB),
     onError = Color(0xFF690005),
     errorContainer = Color(0xFF93000A),
-    onErrorContainer = Color(0xFFFFDAD6)
-)
+    onErrorContainer = Color(0xFFFFDAD6),
+  )
 
-private val AppShapes = Shapes(
+private val AppShapes =
+  Shapes(
     small = RoundedCornerShape(12.dp),
     medium = RoundedCornerShape(16.dp),
-    large = RoundedCornerShape(24.dp)
-)
+    large = RoundedCornerShape(24.dp),
+  )
 
 @Composable
 fun NiasFoodTheme(content: @Composable () -> Unit) {
-    val dark = isSystemInDarkTheme()
-    MaterialTheme(
-        colorScheme = if (dark) DarkColors else LightColors,
-        typography = Typography(),
-        shapes = AppShapes,
-        content = content
-    )
+  val dark = isSystemInDarkTheme()
+  MaterialTheme(
+    colorScheme = if (dark) DarkColors else LightColors,
+    typography = Typography(),
+    shapes = AppShapes,
+    content = content,
+  )
 }

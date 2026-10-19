@@ -10,21 +10,23 @@ import androidx.lifecycle.viewmodel.initializer
 import androidx.lifecycle.viewmodel.viewModelFactory
 import com.apenkoder.niasfood.di.AppContainer
 
-val LocalContainer = staticCompositionLocalOf<AppContainer> {
+val LocalContainer =
+  staticCompositionLocalOf<AppContainer> {
     error("AppContainer was not provided")
-}
+  }
 
 /** Creates a ViewModel that receives the [AppContainer] and a [SavedStateHandle]. [key] must be unique per screen and user. */
 @Composable
 inline fun <reified VM : ViewModel> containerViewModel(
-    key: String,
-    crossinline create: (AppContainer, SavedStateHandle) -> VM
+  key: String,
+  crossinline create: (AppContainer, SavedStateHandle) -> VM,
 ): VM {
-    val container = LocalContainer.current
-    return viewModel<VM>(
-        key = key,
-        factory = viewModelFactory {
-            initializer<VM> { create(container, createSavedStateHandle()) }
-        }
-    )
+  val container = LocalContainer.current
+  return viewModel<VM>(
+    key = key,
+    factory =
+      viewModelFactory {
+        initializer<VM> { create(container, createSavedStateHandle()) }
+      },
+  )
 }

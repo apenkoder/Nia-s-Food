@@ -3,16 +3,15 @@
 Point of sale, shift control and money tracking for a two-outlet restaurant. Kotlin, Jetpack Compose, Room with
 SQLCipher. Offline only: no INTERNET permission, no backend, no Firebase, no payment APIs.
 
-> **Status:** written without a compiler. It has NOT been built or run yet. The first Android Studio sync and build is
-> the real test. Send the first error list back and fix from there (see "If sync or build fails").
+> **Status:** `codeQualityCheck`, Android lint and `testDebugUnitTest` pass locally. GitHub Actions runs the same checks
+> on pushes and pull requests targeting `main` or `develop`; the workflow can also be started manually.
 
 ## Open it
 
 1. Android Studio (current stable). Open the `NiasFood` folder.
 2. Settings, Build Tools, Gradle: set **Gradle JDK = Temurin 21**.
-3. Gradle wrapper: this zip contains `gradle/wrapper/gradle-wrapper.properties` (Gradle 8.9) but not `gradlew`,
-   `gradlew.bat` or `gradle-wrapper.jar`. Android Studio syncs without them. For command-line builds, copy those three
-   files from another of your projects (keep this project's properties file).
+3. The Gradle wrapper is included (`gradlew`, `gradlew.bat` and `gradle/wrapper/gradle-wrapper.jar`). Set the Gradle JDK
+   to Temurin 21. In PowerShell, run `& .\scripts\Invoke-AndroidChecks.ps1` for quality checks, lint and unit tests.
 4. Sync, then run the `app` configuration on your **Kenya Baseline** AVD (API 33).
 5. First launch seeds demo data in **debug** builds, so it takes a few seconds (6 bcrypt hashes).
 
@@ -62,6 +61,10 @@ Most likely suspects, in order:
 `./gradlew testDebugUnitTest` (JVM only): Money, Permissions, rules and lockout, real bcrypt hashing, aggregation
 consistency (gross equals cash plus mobile money, per-day totals equal range totals, voids excluded), business-day logic.
 Not covered yet: DAO and token-sequence tests (instrumented), Compose UI tests (added by the hardening pass).
+
+GitHub Actions runs `codeQualityCheck`, `lint` and `testDebugUnitTest` on pushes and pull requests to `main` and
+`develop`. Failed and successful Gradle reports are retained as workflow artifacts for 7 days. See
+`.github/workflows/ci.yml`.
 
 ## Docs
 

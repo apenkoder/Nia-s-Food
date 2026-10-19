@@ -9,6 +9,8 @@ indent_size = 2
 
 [*.{kt,kts}]
 ktlint_function_naming_ignore_when_annotated_with = Composable
+# Detekt checks wildcard imports; the generated baseline records the existing imports.
+ktlint_standard_no-wildcard-imports = disabled
 
 [*.md]
 indent_size = 2
