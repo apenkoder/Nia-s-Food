@@ -1,0 +1,14 @@
+*.iml
+.gradle/
+/local.properties
+/.idea/
+.DS_Store
+/build/
+/app/build/
+/captures/
+.externalNativeBuild/
+.cxx/
+# Real release keystores and env-based secrets only. Room schemas (app/schemas) ARE committed.
+*.jks
+*.keystore
+!debug.keystore

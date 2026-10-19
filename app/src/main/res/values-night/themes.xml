@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="window_background">#FF000000</color>
+    <style name="Theme.NiasFood" parent="android:Theme.Material.NoActionBar">
+        <item name="android:windowBackground">@color/window_background</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+    </style>
+
+    <style name="Theme.NiasFood.Starting" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">#0A1628</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/apenkoder_mark</item>
+        <item name="windowSplashScreenAnimationDuration">300</item>
+        <item name="postSplashScreenTheme">@style/Theme.NiasFood</item>
+    </style>
+</resources>
