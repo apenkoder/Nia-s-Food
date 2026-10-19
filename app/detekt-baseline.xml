@@ -1,0 +1,219 @@
+<?xml version="1.0" ?>
+<SmellBaseline>
+  <ManuallySuppressedIssues/>
+  <CurrentIssues>
+    <ID>ComplexCondition:SalesService.kt$SalesService$req.heldOrderId != null &amp;&amp; (held == null || held.status != OrderStatus.HELD || held.outletId != req.outletId)</ID>
+    <ID>CyclomaticComplexMethod:Components.kt$@Composable fun errorText( error: AppError, detail: String? = null, ): String</ID>
+    <ID>CyclomaticComplexMethod:Nav.kt$@OptIn(ExperimentalMaterial3Api::class) @Composable fun MainShell( session: Session, onLock: () -&gt; Unit, )</ID>
+    <ID>CyclomaticComplexMethod:Orders.kt$@Composable private fun OrderCard( order: OrderEntity, expanded: Boolean, lines: List&lt;OrderLineEntity&gt;, payments: List&lt;PaymentEntity&gt;, onToggle: () -&gt; Unit, onResume: () -&gt; Unit, onVoid: () -&gt; Unit, )</ID>
+    <ID>CyclomaticComplexMethod:Permissions.kt$Permissions$fun has( role: Role, permission: Permission, ): Boolean</ID>
+    <ID>CyclomaticComplexMethod:PosScreen.kt$@Composable private fun CheckoutContent( state: PosState, vm: PosViewModel, session: Session, )</ID>
+    <ID>CyclomaticComplexMethod:Reports.kt$@Composable private fun ShiftCard( state: ReportsState, overview: ShiftOverview, vm: ReportsViewModel, )</ID>
+    <ID>CyclomaticComplexMethod:SalesService.kt$SalesService$suspend fun submit(req: CheckoutRequest): OrderReceipt</ID>
+    <ID>CyclomaticComplexMethod:ZReportPdfWriter.kt$ZReportPdfWriter$fun write( context: Context, report: ZReportData, ): File</ID>
+    <ID>FunctionNaming:AppRoot.kt$@Composable fun AppRoot()</ID>
+    <ID>FunctionNaming:Components.kt$@Composable fun ConfirmDialog( title: String, text: String, confirmLabel: String, onConfirm: () -&gt; Unit, onDismiss: () -&gt; Unit, )</ID>
+    <ID>FunctionNaming:Components.kt$@Composable fun DemoBanner()</ID>
+    <ID>FunctionNaming:Components.kt$@Composable fun EmptyState( message: String, modifier: Modifier = Modifier, )</ID>
+    <ID>FunctionNaming:Components.kt$@Composable fun ErrorBanner( text: String, onDismiss: (() -&gt; Unit)? = null, modifier: Modifier = Modifier, )</ID>
+    <ID>FunctionNaming:Components.kt$@Composable fun LoadingState(message: String? = null)</ID>
+    <ID>FunctionNaming:Components.kt$@Composable fun ManagerApprovalDialog( outletId: String, permission: Permission, onApproved: (StaffEntity, ApprovalGrant) -&gt; Unit, onDismiss: () -&gt; Unit, )</ID>
+    <ID>FunctionNaming:Components.kt$@Composable fun PinDots( length: Int, filled: Int, modifier: Modifier = Modifier, )</ID>
+    <ID>FunctionNaming:Components.kt$@Composable fun PinPad( onDigit: (Char) -&gt; Unit, onBackspace: () -&gt; Unit, modifier: Modifier = Modifier, enabled: Boolean = true, )</ID>
+    <ID>FunctionNaming:Components.kt$@Composable fun QuantityStepper( qty: Int, onMinus: () -&gt; Unit, onPlus: () -&gt; Unit, modifier: Modifier = Modifier, )</ID>
+    <ID>FunctionNaming:Components.kt$@Composable fun ReasonDialog( title: String, confirmLabel: String, onConfirm: (String) -&gt; Unit, onDismiss: () -&gt; Unit, )</ID>
+    <ID>FunctionNaming:Components.kt$@Composable fun SectionCard( modifier: Modifier = Modifier, title: String? = null, content: @Composable ColumnScope.() -&gt; Unit, )</ID>
+    <ID>FunctionNaming:Components.kt$@Composable fun StatusChip( text: String, icon: ImageVector, positive: Boolean, modifier: Modifier = Modifier, )</ID>
+    <ID>FunctionNaming:Dashboard.kt$@Composable fun DashboardScreen(session: Session)</ID>
+    <ID>FunctionNaming:Expenses.kt$@Composable fun ExpensesScreen(session: Session)</ID>
+    <ID>FunctionNaming:Login.kt$@Composable fun LoginScreen()</ID>
+    <ID>FunctionNaming:Login.kt$@Composable private fun PinEntry( state: LoginState, staff: StaffEntity, vm: LoginViewModel, )</ID>
+    <ID>FunctionNaming:Login.kt$@Composable private fun ProfilePicker( state: LoginState, onPick: (StaffEntity) -&gt; Unit, )</ID>
+    <ID>FunctionNaming:Login.kt$@Composable private fun ProfileRow( staff: StaffEntity, onPick: (StaffEntity) -&gt; Unit, )</ID>
+    <ID>FunctionNaming:Login.kt$@Composable private fun SectionLabel(text: String)</ID>
+    <ID>FunctionNaming:Nav.kt$@OptIn(ExperimentalMaterial3Api::class) @Composable fun MainShell( session: Session, onLock: () -&gt; Unit, )</ID>
+    <ID>FunctionNaming:Orders.kt$@Composable fun OrdersScreen( session: Session, onResume: () -&gt; Unit, )</ID>
+    <ID>FunctionNaming:Orders.kt$@Composable private fun OrderCard( order: OrderEntity, expanded: Boolean, lines: List&lt;OrderLineEntity&gt;, payments: List&lt;PaymentEntity&gt;, onToggle: () -&gt; Unit, onResume: () -&gt; Unit, onVoid: () -&gt; Unit, )</ID>
+    <ID>FunctionNaming:PosScreen.kt$@Composable fun PosScreen(session: Session)</ID>
+    <ID>FunctionNaming:PosScreen.kt$@Composable private fun BrowseContent( state: PosState, vm: PosViewModel, session: Session, )</ID>
+    <ID>FunctionNaming:PosScreen.kt$@Composable private fun CartBar( state: PosState, onReview: () -&gt; Unit, )</ID>
+    <ID>FunctionNaming:PosScreen.kt$@Composable private fun CheckoutContent( state: PosState, vm: PosViewModel, session: Session, )</ID>
+    <ID>FunctionNaming:PosScreen.kt$@Composable private fun DiscountDialog( subtotalCents: Long, onApply: (Long, String) -&gt; Unit, onDismiss: () -&gt; Unit, )</ID>
+    <ID>FunctionNaming:PosScreen.kt$@Composable private fun ItemRow( item: MenuItemEntity, hasOptions: Boolean, onAdd: () -&gt; Unit, onOptions: () -&gt; Unit, onToggleSoldOut: () -&gt; Unit, )</ID>
+    <ID>FunctionNaming:PosScreen.kt$@Composable private fun MoneyRow( label: String, cents: Long, )</ID>
+    <ID>FunctionNaming:PosScreen.kt$@Composable private fun OptionsDialog( item: MenuItemEntity, addOns: List&lt;AddOnEntity&gt;, onAdd: (Variant, List&lt;String&gt;, Int) -&gt; Unit, onDismiss: () -&gt; Unit, )</ID>
+    <ID>FunctionNaming:PosScreen.kt$@Composable private fun ReceiptContent( receipt: OrderReceipt, onNewOrder: () -&gt; Unit, )</ID>
+    <ID>FunctionNaming:Reports.kt$@Composable fun ReportsScreen(session: Session)</ID>
+    <ID>FunctionNaming:Reports.kt$@Composable private fun FigureRow( label: String, cents: Long, bold: Boolean = false, )</ID>
+    <ID>FunctionNaming:Reports.kt$@Composable private fun OpenShiftCard( busy: Boolean, onOpen: (String) -&gt; Unit, )</ID>
+    <ID>FunctionNaming:Reports.kt$@Composable private fun ShiftCard( state: ReportsState, overview: ShiftOverview, vm: ReportsViewModel, )</ID>
+    <ID>FunctionNaming:Reports.kt$@Composable private fun ZDetail( z: ZReportData, onBack: () -&gt; Unit, vm: ReportsViewModel, )</ID>
+    <ID>FunctionNaming:Settings.kt$@Composable fun SettingsScreen(session: Session)</ID>
+    <ID>FunctionNaming:Settings.kt$@Composable private fun ItemDialog( existing: MenuItemEntity?, categories: List&lt;CategoryEntity&gt;, onSave: (categoryId: String, name: String, description: String, price: String, half: String, active: Boolean) -&gt; Unit, onDismiss: () -&gt; Unit, )</ID>
+    <ID>FunctionNaming:Settings.kt$@Composable private fun MenuToolbar( state: SettingsState, vm: SettingsViewModel, )</ID>
+    <ID>FunctionNaming:Settings.kt$@Composable private fun PinDialog( title: String, pinLength: Int, onConfirm: (String, String) -&gt; Unit, onDismiss: () -&gt; Unit, )</ID>
+    <ID>FunctionNaming:Settings.kt$@Composable private fun PinFields( length: Int, pin: String, onPin: (String) -&gt; Unit, again: String, onAgain: (String) -&gt; Unit, )</ID>
+    <ID>FunctionNaming:Settings.kt$@Composable private fun StaffToolbar( state: SettingsState, vm: SettingsViewModel, session: Session, )</ID>
+    <ID>FunctionNaming:Setup.kt$@Composable fun SetupScreen(onDone: () -&gt; Unit)</ID>
+    <ID>FunctionNaming:Setup.kt$@Composable private fun OutletFields( name: String, onName: (String) -&gt; Unit, area: String, onArea: (String) -&gt; Unit, open: String, onOpen: (String) -&gt; Unit, close: String, onClose: (String) -&gt; Unit, )</ID>
+    <ID>FunctionNaming:SplashScreen.kt$@Composable fun SplashScreen(onFinished: () -&gt; Unit)</ID>
+    <ID>FunctionNaming:SummaryViews.kt$@Composable fun OutletPerformanceCard( byOutlet: Map&lt;String, Long&gt;, names: Map&lt;String, String&gt;, )</ID>
+    <ID>FunctionNaming:SummaryViews.kt$@Composable fun PaymentSplitCard(summary: Summary)</ID>
+    <ID>FunctionNaming:SummaryViews.kt$@Composable fun SalesBarChart( values: List&lt;Pair&lt;String, Long&gt;&gt;, modifier: Modifier = Modifier, )</ID>
+    <ID>FunctionNaming:SummaryViews.kt$@Composable fun SummaryCards( summary: Summary, modifier: Modifier = Modifier, )</ID>
+    <ID>FunctionNaming:SummaryViews.kt$@Composable fun TopItemsCard(summary: Summary)</ID>
+    <ID>FunctionNaming:SummaryViews.kt$@Composable private fun MetricCard( label: String, value: String, modifier: Modifier = Modifier, note: String? = null, )</ID>
+    <ID>FunctionNaming:SummaryViews.kt$@Composable private fun SplitRow( label: String, cents: Long, )</ID>
+    <ID>FunctionNaming:Theme.kt$@Composable fun NiasFoodTheme(content: @Composable () -&gt; Unit)</ID>
+    <ID>LongMethod:Components.kt$@Composable fun ManagerApprovalDialog( outletId: String, permission: Permission, onApproved: (StaffEntity, ApprovalGrant) -&gt; Unit, onDismiss: () -&gt; Unit, )</ID>
+    <ID>LongMethod:Dashboard.kt$@Composable fun DashboardScreen(session: Session)</ID>
+    <ID>LongMethod:Expenses.kt$@Composable fun ExpensesScreen(session: Session)</ID>
+    <ID>LongMethod:Nav.kt$@OptIn(ExperimentalMaterial3Api::class) @Composable fun MainShell( session: Session, onLock: () -&gt; Unit, )</ID>
+    <ID>LongMethod:Orders.kt$@Composable fun OrdersScreen( session: Session, onResume: () -&gt; Unit, )</ID>
+    <ID>LongMethod:Orders.kt$@Composable private fun OrderCard( order: OrderEntity, expanded: Boolean, lines: List&lt;OrderLineEntity&gt;, payments: List&lt;PaymentEntity&gt;, onToggle: () -&gt; Unit, onResume: () -&gt; Unit, onVoid: () -&gt; Unit, )</ID>
+    <ID>LongMethod:PosScreen.kt$@Composable private fun BrowseContent( state: PosState, vm: PosViewModel, session: Session, )</ID>
+    <ID>LongMethod:PosScreen.kt$@Composable private fun CheckoutContent( state: PosState, vm: PosViewModel, session: Session, )</ID>
+    <ID>LongMethod:PosScreen.kt$@Composable private fun ItemRow( item: MenuItemEntity, hasOptions: Boolean, onAdd: () -&gt; Unit, onOptions: () -&gt; Unit, onToggleSoldOut: () -&gt; Unit, )</ID>
+    <ID>LongMethod:PosScreen.kt$@Composable private fun ReceiptContent( receipt: OrderReceipt, onNewOrder: () -&gt; Unit, )</ID>
+    <ID>LongMethod:Reports.kt$@Composable fun ReportsScreen(session: Session)</ID>
+    <ID>LongMethod:Reports.kt$@Composable private fun ShiftCard( state: ReportsState, overview: ShiftOverview, vm: ReportsViewModel, )</ID>
+    <ID>LongMethod:Reports.kt$@Composable private fun ZDetail( z: ZReportData, onBack: () -&gt; Unit, vm: ReportsViewModel, )</ID>
+    <ID>LongMethod:SalesService.kt$SalesService$suspend fun submit(req: CheckoutRequest): OrderReceipt</ID>
+    <ID>LongMethod:Setup.kt$@Composable fun SetupScreen(onDone: () -&gt; Unit)</ID>
+    <ID>LongMethod:ZReportPdfWriter.kt$ZReportPdfWriter$fun write( context: Context, report: ZReportData, ): File</ID>
+    <ID>LongParameterList:AggregatorTest.kt$AggregatorTest$( id: String, date: String, total: Long, type: OrderType = OrderType.DINE_IN, status: OrderStatus = OrderStatus.PAID, outlet: String = "o1", paidAt: Long? = 1L, )</ID>
+    <ID>LongParameterList:Audit.kt$Audit$( session: Session, action: String, entityType: String, entityId: String, reason: String? = null, outletId: String? = session.outletId, )</ID>
+    <ID>LongParameterList:MenuService.kt$MenuService$( id: String?, categoryId: String, name: String, description: String, priceCents: Long, halfPriceCents: Long?, active: Boolean, )</ID>
+    <ID>LongParameterList:Orders.kt$( order: OrderEntity, expanded: Boolean, lines: List&lt;OrderLineEntity&gt;, payments: List&lt;PaymentEntity&gt;, onToggle: () -&gt; Unit, onResume: () -&gt; Unit, onVoid: () -&gt; Unit, )</ID>
+    <ID>LongParameterList:SalesService.kt$CheckoutRequest$( val outletId: String, val type: OrderType, val lines: List&lt;CartLine&gt;, val note: String, val discountCents: Long, val discountReason: String?, val discountApproverId: String?, val heldOrderId: String?, /** null = hold the order unpaid */ val payment: PaymentInput?, )</ID>
+    <ID>LongParameterList:Settings.kt$SettingsViewModel$( id: String?, categoryId: String, name: String, description: String, priceText: String, halfText: String, active: Boolean, )</ID>
+    <ID>LongParameterList:Setup.kt$( name: String, onName: (String) -&gt; Unit, area: String, onArea: (String) -&gt; Unit, open: String, onOpen: (String) -&gt; Unit, close: String, onClose: (String) -&gt; Unit, )</ID>
+    <ID>MatchingDeclarationName:Nav.kt$ShellViewModel : ViewModel</ID>
+    <ID>MaxLineLength:AggregatorTest.kt$AggregatorTest$listOf(expense("e1", "2026-10-14", 12_000L), expense("e2", "2026-10-15", 8_000L), expense("e3", "2026-10-15", 7_000L, voided = true))</ID>
+    <ID>MaxLineLength:AggregatorTest.kt$AggregatorTest$private val lines = listOf(line("a", "Pilau", 2, 50_000L), line("b", "Pilau", 1, 30_000L), line("c", "Samosa", 5, 20_000L))</ID>
+    <ID>MaxLineLength:AuthService.kt$AuthService$audit.log(s, if (active) "staff_activated" else "staff_deactivated", "staff", target.id, outletId = target.outletId)</ID>
+    <ID>MaxLineLength:AuthService.kt$AuthService$suspend fun profiles(): List&lt;StaffEntity&gt;</ID>
+    <ID>MaxLineLength:Components.kt$Surface</ID>
+    <ID>MaxLineLength:Components.kt$val container = if (positive) MaterialTheme.colorScheme.primaryContainer else MaterialTheme.colorScheme.secondaryContainer</ID>
+    <ID>MaxLineLength:Components.kt$val content = if (positive) MaterialTheme.colorScheme.onPrimaryContainer else MaterialTheme.colorScheme.onSecondaryContainer</ID>
+    <ID>MaxLineLength:Daos.kt$ExpenseDao$@Query("SELECT * FROM expense WHERE businessDate BETWEEN :from AND :to AND voided = 0 AND (:outletId IS NULL OR outletId = :outletId)")</ID>
+    <ID>MaxLineLength:Daos.kt$ExpenseDao$@Query("SELECT COALESCE(SUM(amountCents), 0) FROM expense WHERE shiftId = :shiftId AND channel = 'CASH_FROM_TILL' AND voided = 0")</ID>
+    <ID>MaxLineLength:Daos.kt$OrderDao$"SELECT * FROM customer_order WHERE businessDate BETWEEN :from AND :to AND status != 'HELD' AND (:outletId IS NULL OR outletId = :outletId)"</ID>
+    <ID>MaxLineLength:Daos.kt$OrderDao$"SELECT l.* FROM order_line l JOIN customer_order o ON o.id = l.orderId WHERE o.businessDate BETWEEN :from AND :to AND o.status = 'PAID' AND (:outletId IS NULL OR o.outletId = :outletId)"</ID>
+    <ID>MaxLineLength:Daos.kt$OrderDao$@Query("SELECT * FROM customer_order WHERE outletId = :outletId AND businessDate = :date AND status != 'HELD' ORDER BY createdAt DESC")</ID>
+    <ID>MaxLineLength:Daos.kt$OrderDao$@Query("SELECT l.* FROM order_line l JOIN customer_order o ON o.id = l.orderId WHERE o.shiftId = :shiftId AND o.status = 'PAID'")</ID>
+    <ID>MaxLineLength:Daos.kt$PaymentDao$"SELECT COALESCE(SUM(p.amountCents), 0) FROM payment p JOIN customer_order o ON o.id = p.orderId WHERE p.shiftId = :shiftId AND p.method = 'CASH' AND o.status = 'PAID'"</ID>
+    <ID>MaxLineLength:Daos.kt$PaymentDao$"SELECT p.* FROM payment p JOIN customer_order o ON o.id = p.orderId WHERE o.businessDate BETWEEN :from AND :to AND o.status = 'PAID' AND (:outletId IS NULL OR o.outletId = :outletId)"</ID>
+    <ID>MaxLineLength:Daos.kt$PaymentDao$"SELECT p.* FROM payment p JOIN customer_order o ON o.id = p.orderId WHERE p.shiftId = :shiftId AND p.method = 'MOBILE_MONEY' AND o.status = 'PAID' ORDER BY p.createdAt"</ID>
+    <ID>MaxLineLength:Daos.kt$PaymentDao$@Query("SELECT p.* FROM payment p JOIN customer_order o ON o.id = p.orderId WHERE p.shiftId = :shiftId AND o.status = 'PAID'")</ID>
+    <ID>MaxLineLength:Daos.kt$ShiftDao$@Query("SELECT * FROM shift WHERE status = 'CLOSED' AND (:outletId IS NULL OR outletId = :outletId) ORDER BY closedAt DESC LIMIT 60")</ID>
+    <ID>MaxLineLength:Dashboard.kt$DashboardViewModel$it.copy(loading = false, summary = result.value.first, chart = result.value.second, updatedAt = now, error = null)</ID>
+    <ID>MaxLineLength:Expenses.kt$val vm = containerViewModel&lt;ExpensesViewModel&gt;("expenses-${session.staffId}") { c, _ -&gt; ExpensesViewModel(c, session) }</ID>
+    <ID>MaxLineLength:Locals.kt$/** Creates a ViewModel that receives the [AppContainer] and a [SavedStateHandle]. [key] must be unique per screen and user. */</ID>
+    <ID>MaxLineLength:Orders.kt$OrderStatus.PAID -&gt; StatusChip(stringResource(R.string.status_paid), Icons.Default.CheckCircle, positive = true)</ID>
+    <ID>MaxLineLength:Orders.kt$OrderStatus.VOIDED -&gt; StatusChip(stringResource(R.string.status_voided), Icons.Default.Close, positive = false)</ID>
+    <ID>MaxLineLength:Orders.kt$Tab(selected = tab == 0, onClick = { tab = 0 }, text = { Text(stringResource(R.string.orders_held, state.held.size)) })</ID>
+    <ID>MaxLineLength:Orders.kt$Tab(selected = tab == 1, onClick = { tab = 1 }, text = { Text(stringResource(R.string.orders_today, state.day.size)) })</ID>
+    <ID>MaxLineLength:Orders.kt$Text("${l.qty} x ${l.name}$tag ${Money(l.lineTotalCents).format()}", style = MaterialTheme.typography.bodyMedium)</ID>
+    <ID>MaxLineLength:Orders.kt$Text(stringResource(if (order.status == OrderStatus.HELD) R.string.orders_discard else R.string.orders_void))</ID>
+    <ID>MaxLineLength:PosScreen.kt$AssistChip(onClick = { tenderedText = amount.toString() }, label = { Text(Money.ofShillings(amount).format()) })</ID>
+    <ID>MaxLineLength:PosScreen.kt$Text("${l.qty} x ${l.name}$halfTag", style = MaterialTheme.typography.bodyMedium, modifier = Modifier.weight(1f))</ID>
+    <ID>MaxLineLength:PosScreen.kt$if (r.order.discountCents &gt; 0L) sb.appendLine(context.getString(R.string.pos_discount) + " -" + Money(r.order.discountCents).format())</ID>
+    <ID>MaxLineLength:PosScreen.kt$sb.appendLine(NairobiTime.shortDate(r.order.businessDate) + " " + NairobiTime.time(r.order.paidAt ?: r.order.createdAt))</ID>
+    <ID>MaxLineLength:PosScreen.kt$stringResource(R.string.receipt_meta, receipt.outletName, typeText, NairobiTime.time(order.paidAt ?: order.createdAt))</ID>
+    <ID>MaxLineLength:PosViewModel.kt$PosViewModel$c.menu.addOns().collect { list -&gt; _state.update { it.copy(addOns = list, addOnsById = list.associateBy { a -&gt; a.id }) } }</ID>
+    <ID>MaxLineLength:PosViewModel.kt$PosViewModel$c.menu.items().collect { list -&gt; _state.update { it.copy(items = list, itemsById = list.associateBy { i -&gt; i.id }) } }</ID>
+    <ID>MaxLineLength:ReportService.kt$ReportService$?:</ID>
+    <ID>MaxLineLength:Reports.kt$StatusChip(stringResource(R.string.z_variance_chip, Money(variance).format()), Icons.Default.Warning, positive = false)</ID>
+    <ID>MaxLineLength:Reports.kt$Text(stringResource(R.string.pdf_manager, s.closedByName ?: s.openedByName), style = MaterialTheme.typography.bodySmall)</ID>
+    <ID>MaxLineLength:Reports.kt$Verification.FLAGGED -&gt; StatusChip(stringResource(R.string.flagged), Icons.Default.Warning, positive = false)</ID>
+    <ID>MaxLineLength:Reports.kt$Verification.VERIFIED -&gt; StatusChip(stringResource(R.string.verified), Icons.Default.CheckCircle, positive = true)</ID>
+    <ID>MaxLineLength:Reports.kt$if (reason != null) Text(stringResource(R.string.pdf_variance_reason, reason), style = MaterialTheme.typography.bodySmall)</ID>
+    <ID>MaxLineLength:Reports.kt$if (state.daily.isEmpty()) Text(stringResource(R.string.no_sales_in_range), style = MaterialTheme.typography.bodyMedium)</ID>
+    <ID>MaxLineLength:Reports.kt$stringResource(R.string.shift_opened_at, NairobiTime.time(overview.shift.openedAt), overview.shift.openedByName)</ID>
+    <ID>MaxLineLength:SalesService.kt$SalesService$db.orderDao().updateOrder(order.copy(status = OrderStatus.VOIDED, voidReason = cleanReason, voidedBy = approver, voidedAt = now))</ID>
+    <ID>MaxLineLength:SalesService.kt$SalesService$db.syncOutboxDao().insert(SyncOutboxEntity(entityType = type, entityId = id, op = op, createdAt = clock.nowMillis()))</ID>
+    <ID>MaxLineLength:SalesService.kt$SalesService$if (countedCashCents &lt; 0L || countedCashCents &gt; MAX_EXPENSE_CENTS * 10L) throw AppException(AppError.AMOUNT_INVALID)</ID>
+    <ID>MaxLineLength:SalesService.kt$SalesService$if (discount &gt; 0L) audit.log(s, "discount_applied", "order", orderId, "$discount by $approverId: $discountReason", req.outletId)</ID>
+    <ID>MaxLineLength:SalesService.kt$SalesService$private suspend fun outletOrFail(id: String): OutletEntity</ID>
+    <ID>MaxLineLength:SalesService.kt$SalesService$verification = if (pay.method == PaymentMethod.MOBILE_MONEY) Verification.UNVERIFIED else Verification.NOT_REQUIRED</ID>
+    <ID>MaxLineLength:Settings.kt$Button</ID>
+    <ID>MaxLineLength:Settings.kt$Button(onClick = { adding = true }, modifier = Modifier.heightIn(min = 48.dp)) { Text(stringResource(R.string.set_add_staff)) }</ID>
+    <ID>MaxLineLength:Settings.kt$OutlinedTextField(name, { name = it.take(30) }, singleLine = true, label = { Text(stringResource(R.string.field_name)) })</ID>
+    <ID>MaxLineLength:Settings.kt$OutlinedTextField(name, { name = it.take(40) }, singleLine = true, label = { Text(stringResource(R.string.field_name)) })</ID>
+    <ID>MaxLineLength:Settings.kt$TextButton(onClick = { onConfirm(pin, again) }, enabled = pin.length == pinLength) { Text(stringResource(R.string.save)) }</ID>
+    <ID>MaxLineLength:Settings.kt$val vm = containerViewModel&lt;SettingsViewModel&gt;("settings-${session.staffId}") { c, _ -&gt; SettingsViewModel(c, session) }</ID>
+    <ID>MaxLineLength:SummaryViews.kt$Row</ID>
+    <ID>MaxLineLength:SummaryViews.kt$if (note != null) Text(note, style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurfaceVariant)</ID>
+    <ID>ReturnCount:AuthService.kt$AuthService$private suspend fun verify( staff: StaffEntity, pin: String, ): Check</ID>
+    <ID>ReturnCount:Money.kt$Money.Companion$fun parse(text: String): Money?</ID>
+    <ID>ReturnCount:PosViewModel.kt$CartEntry.Companion$fun decode(raw: String): CartEntry?</ID>
+    <ID>ReturnCount:Rules.kt$PinRules$fun isWeak(pin: String): Boolean</ID>
+    <ID>ReturnCount:Setup.kt$fun outletInput( name: String, area: String, open: String, close: String, ): AuthService.OutletInput?</ID>
+    <ID>ReturnCount:Time.kt$NairobiTime$fun parseMinutes(text: String): Int?</ID>
+    <ID>SwallowedException:Outcome.kt$e: Exception</ID>
+    <ID>ThrowsCount:AuthService.kt$AuthService$suspend fun addStaff( name: String, role: Role, outletId: String?, pin: String, ): StaffEntity</ID>
+    <ID>ThrowsCount:AuthService.kt$AuthService$suspend fun completeSetup( ownerName: String, ownerPin: String, outlets: List&lt;OutletInput&gt;, )</ID>
+    <ID>ThrowsCount:AuthService.kt$AuthService$suspend fun resetPin( targetId: String, newPin: String, )</ID>
+    <ID>ThrowsCount:AuthService.kt$AuthService$suspend fun setActive( targetId: String, active: Boolean, )</ID>
+    <ID>ThrowsCount:MenuService.kt$MenuService$suspend fun saveItem( id: String?, categoryId: String, name: String, description: String, priceCents: Long, halfPriceCents: Long?, active: Boolean, )</ID>
+    <ID>ThrowsCount:ReportService.kt$ReportService$private fun requireView( s: Session, outletId: String?, )</ID>
+    <ID>TooGenericExceptionCaught:Outcome.kt$e: Exception</ID>
+    <ID>TooManyFunctions:AuthService.kt$AuthService</ID>
+    <ID>TooManyFunctions:Components.kt$com.apenkoder.niasfood.ui.components.Components.kt</ID>
+    <ID>TooManyFunctions:Daos.kt$MenuDao</ID>
+    <ID>TooManyFunctions:Daos.kt$OrderDao</ID>
+    <ID>TooManyFunctions:PosViewModel.kt$PosViewModel : ViewModel</ID>
+    <ID>TooManyFunctions:Reports.kt$ReportsViewModel : ViewModel</ID>
+    <ID>TooManyFunctions:SalesService.kt$SalesService</ID>
+    <ID>UnusedParameter:PosScreen.kt$session: Session</ID>
+    <ID>UnusedPrivateProperty:MenuService.kt$MenuService$private val clock: AppClock</ID>
+    <ID>UnusedPrivateProperty:ReportService.kt$ReportService$private val clock: AppClock</ID>
+    <ID>WildcardImport:Components.kt$import androidx.compose.foundation.*</ID>
+    <ID>WildcardImport:Components.kt$import androidx.compose.foundation.layout.*</ID>
+    <ID>WildcardImport:Components.kt$import androidx.compose.material.icons.filled.*</ID>
+    <ID>WildcardImport:Components.kt$import androidx.compose.material3.*</ID>
+    <ID>WildcardImport:Components.kt$import androidx.compose.runtime.*</ID>
+    <ID>WildcardImport:Dashboard.kt$import androidx.compose.foundation.layout.*</ID>
+    <ID>WildcardImport:Dashboard.kt$import androidx.compose.material3.*</ID>
+    <ID>WildcardImport:Dashboard.kt$import androidx.compose.runtime.*</ID>
+    <ID>WildcardImport:Dashboard.kt$import com.apenkoder.niasfood.ui.components.*</ID>
+    <ID>WildcardImport:Expenses.kt$import androidx.compose.foundation.layout.*</ID>
+    <ID>WildcardImport:Expenses.kt$import androidx.compose.material.icons.filled.*</ID>
+    <ID>WildcardImport:Expenses.kt$import androidx.compose.material3.*</ID>
+    <ID>WildcardImport:Expenses.kt$import androidx.compose.runtime.*</ID>
+    <ID>WildcardImport:Expenses.kt$import com.apenkoder.niasfood.ui.components.*</ID>
+    <ID>WildcardImport:Login.kt$import androidx.compose.foundation.layout.*</ID>
+    <ID>WildcardImport:Login.kt$import androidx.compose.material.icons.filled.*</ID>
+    <ID>WildcardImport:Login.kt$import androidx.compose.material3.*</ID>
+    <ID>WildcardImport:Login.kt$import androidx.compose.runtime.*</ID>
+    <ID>WildcardImport:Nav.kt$import androidx.compose.foundation.layout.*</ID>
+    <ID>WildcardImport:Nav.kt$import androidx.compose.material.icons.filled.*</ID>
+    <ID>WildcardImport:Nav.kt$import androidx.compose.material3.*</ID>
+    <ID>WildcardImport:Nav.kt$import androidx.compose.runtime.*</ID>
+    <ID>WildcardImport:Orders.kt$import androidx.compose.foundation.layout.*</ID>
+    <ID>WildcardImport:Orders.kt$import androidx.compose.material.icons.filled.*</ID>
+    <ID>WildcardImport:Orders.kt$import androidx.compose.material3.*</ID>
+    <ID>WildcardImport:Orders.kt$import androidx.compose.runtime.*</ID>
+    <ID>WildcardImport:Orders.kt$import com.apenkoder.niasfood.ui.components.*</ID>
+    <ID>WildcardImport:PosScreen.kt$import androidx.compose.foundation.layout.*</ID>
+    <ID>WildcardImport:PosScreen.kt$import androidx.compose.material.icons.filled.*</ID>
+    <ID>WildcardImport:PosScreen.kt$import androidx.compose.material3.*</ID>
+    <ID>WildcardImport:PosScreen.kt$import androidx.compose.runtime.*</ID>
+    <ID>WildcardImport:PosScreen.kt$import com.apenkoder.niasfood.ui.components.*</ID>
+    <ID>WildcardImport:Reports.kt$import androidx.compose.foundation.layout.*</ID>
+    <ID>WildcardImport:Reports.kt$import androidx.compose.material.icons.filled.*</ID>
+    <ID>WildcardImport:Reports.kt$import androidx.compose.material3.*</ID>
+    <ID>WildcardImport:Reports.kt$import androidx.compose.runtime.*</ID>
+    <ID>WildcardImport:Reports.kt$import com.apenkoder.niasfood.ui.components.*</ID>
+    <ID>WildcardImport:Settings.kt$import androidx.compose.foundation.layout.*</ID>
+    <ID>WildcardImport:Settings.kt$import androidx.compose.material3.*</ID>
+    <ID>WildcardImport:Settings.kt$import androidx.compose.runtime.*</ID>
+    <ID>WildcardImport:Settings.kt$import com.apenkoder.niasfood.ui.components.*</ID>
+    <ID>WildcardImport:Setup.kt$import androidx.compose.foundation.layout.*</ID>
+    <ID>WildcardImport:Setup.kt$import androidx.compose.material3.*</ID>
+    <ID>WildcardImport:Setup.kt$import androidx.compose.runtime.*</ID>
+    <ID>WildcardImport:SummaryViews.kt$import androidx.compose.foundation.layout.*</ID>
+    <ID>WildcardImport:SummaryViews.kt$import androidx.compose.material3.*</ID>
+  </CurrentIssues>
+</SmellBaseline>
